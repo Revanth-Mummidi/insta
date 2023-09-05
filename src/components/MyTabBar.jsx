@@ -2,7 +2,7 @@ import { View, Text, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 function MyTabBar({ state, descriptors, navigation }) {
   return (
-    <View style={{ flex:0, flexDirection: 'row' ,justifyContent:'space-between',padding:10,marginHorizontal:10,alignItems:'center' }}>
+    <View style={{ flex:0, flexDirection: 'row' ,justifyContent:'space-between',padding:10,marginHorizontal:10,alignItems:'center',backgroundColor:'black' }}>
       {state.routes.map((route, index) => {
         const { options } = descriptors[route.key];
         const label =
@@ -46,7 +46,7 @@ function MyTabBar({ state, descriptors, navigation }) {
           >
             
                 
-                <Icon onPress={onPress} onLongPress={onLongPress}  style={{ color: isFocused ? '#673ab7' : '#222' }} size={30} name={label=="Home" ? "home" : label=="Search" ? "search" : label=="Post" ? "plus" : label=="Reels" ? "video-camera" : label=="Profile" ? "user": ""} />
+                <Icon onPress={onPress} onLongPress={onLongPress}  style={{ color: isFocused ? '#FFFF' : 'grey' }} size={30} name={label=="Home" ? "home" : label=="Search" ? "search" : label=="Post" ? "plus" : label=="Reels" ? "video-camera" : label=="Profile" ? "user": ""} />
             
               
         
