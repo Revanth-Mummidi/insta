@@ -1,23 +1,19 @@
-import { View, Text,Image,TouchableOpacity,ScrollView} from 'react-native'
-import React from 'react'
-import StoryContent from './StoryContent'
+import React from 'react';
+import { View, Text, Image, TouchableOpacity, ScrollView, useWindowDimensions } from 'react-native';
+import StoryContent from './StoryContent';
+import storyData from '../backend/storyData.json';
 
 const StoriesHorizontalList = () => {
- return (
-  <ScrollView horizontal={true}>
-  <View style={{flex:1,flexDirection:'row',alignItems:'center',width:'100%' , height:90 , backgroundColor:'black'}}>
-  <StoryContent/>
-  <StoryContent/>
-  <StoryContent/>
-  <StoryContent/>
-  <StoryContent/>
-  <StoryContent/>
-  <StoryContent/>
-  <StoryContent/>
-  <StoryContent/>
-  </View>
-  </ScrollView>
- )
-}
 
-export default StoriesHorizontalList
+  return (
+    <ScrollView horizontal={true}>
+      <View style={{ flex: 1, flexDirection: 'row', alignItems: 'center', width:900,height: 100, backgroundColor: 'black' }}>
+        {storyData.profiles.map((storyData, idx) => {
+          return <StoryContent key={idx} storyData={storyData} />;
+        })}
+      </View>
+    </ScrollView>
+  );
+};
+
+export default StoriesHorizontalList;

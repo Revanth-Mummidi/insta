@@ -2,7 +2,7 @@ import { View, Text, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 function MyTabBar({ state, descriptors, navigation }) {
   return (
-    <View style={{ flex:0, flexDirection: 'row' ,justifyContent:'space-between',padding:10,marginHorizontal:10,alignItems:'center',backgroundColor:'black' }}>
+    <View style={{ flex:0, flexDirection: 'row' ,justifyContent:'space-around',padding:10,alignItems:'center',backgroundColor:'black' }}>
       {state.routes.map((route, index) => {
         const { options } = descriptors[route.key];
         const label =

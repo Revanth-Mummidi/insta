@@ -8,14 +8,14 @@ const AppBar = ({ navigation }) => {
   
   return (
     
-    <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: 400,height:57, alignItems:'center', backgroundColor: 'black' }}>
+    <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: "100%",height:57, alignItems:'center', backgroundColor: 'black' }}>
       <Image source={{ uri: instaUrl }} style={{ width: 150, height: 40 }} resizeMode='contain' />
       <View style={{ flexDirection: 'row', justifyContent: 'space-between', width:80, marginRight: 15 }}>
         <TouchableOpacity>
-        <Icon name="hearto" size={30} style={{ marginRight: 15, color: 'white' }} />
+        <Icon name="hearto" size={25} style={{ marginRight: 15, color: 'white' }} />
         </TouchableOpacity>
         <TouchableOpacity>
-        <Icon name="message1" size={30} style={{ marginRight: 15, color: 'white' }} />
+        <Icon name="message1" size={25} style={{ marginRight: 10, color: 'white' }} />
         </TouchableOpacity>
       </View>
     </View>
