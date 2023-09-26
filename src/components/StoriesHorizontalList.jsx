@@ -7,7 +7,7 @@ const StoriesHorizontalList = () => {
 
   return (
     <ScrollView horizontal={true} >
-      <View style={{ flex: 1, flexDirection: 'row', alignItems: 'center', width:900,height: 100, backgroundColor: 'black' }}>
+      <View style={{ flex:1, flexDirection: 'row', alignItems: 'center', backgroundColor: 'black' }}>
         {storyData.profiles.map((storyData, idx) => {
           return <StoryContent key={idx} storyData={storyData} />;
         })}
