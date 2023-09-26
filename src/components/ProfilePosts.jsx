@@ -3,6 +3,7 @@ import Icon from 'react-native-vector-icons/MaterialIcons'
 import React,{useState} from 'react'
 import TabScreen from '../screens/ProfileBottomScreens/TabScreen';
 import PostScreen from '../screens/ProfileBottomScreens/PostScreen';
+import ReelScreen from '../screens/ProfileBottomScreens/ReelScreen';
 
 const ProfilePosts = () => {
     const [isPost,setIsPost]=useState(true);
@@ -36,7 +37,9 @@ const ProfilePosts = () => {
       <Icon name="person-pin" size={30} style={{color:isTags?'white':'rgba(255,255,255,0.6)'}}/>
       </TouchableOpacity>
     </View>
-   <PostScreen/>
+      {
+        isPost?<PostScreen/>:isReel?<ReelScreen/>:<TabScreen/>
+      }
     </View>
   )
 }
