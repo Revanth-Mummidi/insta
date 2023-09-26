@@ -24,6 +24,7 @@ const App = () => {
         <Tab.Screen name="Reels" component={ReelsScreen} />
         <Tab.Screen name="Profile" component={ProfileScreen}  options={({ navigation }) => { return { headerShown: false } }}/>
       </Tab.Navigator>
+      
     </NavigationContainer>
     // </SafeAreaView>
   );
