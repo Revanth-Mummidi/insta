@@ -30,15 +30,15 @@ const ProfilePosts = () => {
      <TouchableOpacity onPress={handlePost}>
       <Icon name="grid-on" size={30} style={{color:isPost?'white':'rgba(255,255,255,0.6)'}}/>
       </TouchableOpacity >
-      <TouchableOpacity onPress={handleReels} >
+      {/* <TouchableOpacity onPress={handleReels} >
       <Icon name="video-collection" size={30} style={{color:isReel?'white':'rgba(255,255,255,0.6)'}}/>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
       <TouchableOpacity onPress={handleTags}>
       <Icon name="person-pin" size={30} style={{color:isTags?'white':'rgba(255,255,255,0.6)'}}/>
       </TouchableOpacity>
     </View>
       {
-        isPost?<PostScreen/>:isReel?<ReelScreen/>:<TabScreen/>
+        isPost?<PostScreen/>:<TabScreen/>
       }
     </View>
   )

@@ -3,8 +3,8 @@ import React from 'react'
 
 const ReelScreen = () => {
   return (
-    <View>
-      <Text>ReelScreen</Text>
+    <View >
+      <Text style={{color:'white'}}>ReelScreen</Text>
     </View>
   )
 }

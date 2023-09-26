@@ -31,13 +31,16 @@ const PostScreen = () => {
             key:7,
             image:require('../../images/92833.jpg'),
         },
+     
     ];
   return (
-    <View>
+    <View style={{backgroundColor:'black'}}>
       <FlatList
       data={data}
       numColumns={3}
       horizontal={false}
+    //   windowSize={}
+    
       renderItem={({item})=>{
         // console.log(item.image);
         if(item.key>=4)

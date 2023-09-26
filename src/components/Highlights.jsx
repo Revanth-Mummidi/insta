@@ -20,6 +20,11 @@ const Highlights = () => {
         name:'Movies',
     },
     {
+      key:4,
+      image:'https://i0.wp.com/www.pinkpepperparadise.com/wp-content/uploads/2019/07/Instagram-Higlight-Cover-Handwritten-free-for-bloggers-blog.jpg?resize=1440%2C2560',
+      name:'Blogs',
+  },
+    {
         key:5,
         image:require('../images/download.png'),
         name:'New',

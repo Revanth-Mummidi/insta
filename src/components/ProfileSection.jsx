@@ -52,6 +52,7 @@ const ProfileSection = () => {
             justifyContent: 'space-between',
             alignItems: 'center',
           }}>
+          
           <View
             style={{
               flex: 1,
@@ -59,9 +60,11 @@ const ProfileSection = () => {
               justifyContent: 'space-around',
               alignItems: 'center',
             }}>
+            <TouchableOpacity>
             <Text style={{color: 'white', fontSize: 20, fontWeight: '900'}}>
               5
             </Text>
+            </TouchableOpacity>
             <Text>Posts</Text>
           </View>
           <View
@@ -71,9 +74,11 @@ const ProfileSection = () => {
               justifyContent: 'space-around',
               alignItems: 'center',
             }}>
+            <TouchableOpacity>
             <Text style={{color: 'white', fontSize: 20, fontWeight: '900'}}>
               266
             </Text>
+            </TouchableOpacity>
             <Text>Followers</Text>
           </View>
           <View
@@ -83,9 +88,11 @@ const ProfileSection = () => {
               justifyContent: 'space-around',
               alignItems: 'center',
             }}>
+            <TouchableOpacity>
             <Text style={{color: 'white', fontSize: 20, fontWeight: '900'}}>
               308
             </Text>
+            </TouchableOpacity>
             <Text>Following</Text>
           </View>
         </View>

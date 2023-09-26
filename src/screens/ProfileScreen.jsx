@@ -6,7 +6,7 @@ import Highlights from '../components/Highlights';
 import ProfilePosts from '../components/ProfilePosts';
 const ProfileScreen = () => {
   return (
-    <>
+    <View style={{flex:1,backgroundColor:'black'}}>
     <ScrollView>
       <View
         style={{
@@ -24,11 +24,11 @@ const ProfileScreen = () => {
           <Highlights />
         </View>
       </View>
-      <View style={{flex: 1, flexDirection: 'row',backgroundColor:'black'}}>
+      {/* <View style={{flex: 1, flexDirection: 'row',backgroundColor:'black'}}> */}
         <ProfilePosts />
-      </View>
+      {/* </View> */}
       </ScrollView>
-    </>
+    </View>
   );
 };
 
