@@ -16,6 +16,7 @@ const App = () => {
   return (
     // <SafeAreaView>
     // <StatusBar backgroundColor="#FFFFFF" barStyle="dark-content"  />
+   
     <NavigationContainer>
       <Tab.Navigator tabBar={props => <MyTabBar {...props} />}>
         <Tab.Screen name="Home" component={HomeScreen} options={({ navigation }) => { return { headerShown: false } }} />
