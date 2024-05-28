@@ -44,13 +44,7 @@ const Highlights = () => {
         renderItem={({item}) => {
           if (item.key != 5) {
             return (
-              <TouchableOpacity onPress={()=>{
-                let arr=HighlightData;
-                arr=arr.filter((data)=>{
-                  return data!=item;
-                })
-                setHighlightData(arr)
-              }}>
+              <TouchableOpacity >
                 <View
                   style={{
                     backgroundColor: 'black',

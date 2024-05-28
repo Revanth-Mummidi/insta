@@ -20,9 +20,9 @@ const App = () => {
     <NavigationContainer>
       <Tab.Navigator tabBar={props => <MyTabBar {...props} />}>
         <Tab.Screen name="Home" component={HomeScreen} options={({ navigation }) => { return { headerShown: false } }} />
-        <Tab.Screen name="Search" component={SearchScreen} />
-        <Tab.Screen name="Post" component={PostScreen} />
-        <Tab.Screen name="Reels" component={ReelsScreen} />
+        <Tab.Screen name="Search" component={SearchScreen} options={({ navigation }) => { return { headerShown: false } }} />
+        <Tab.Screen name="Post" component={PostScreen} options={({ navigation }) => { return { headerShown: false } }} />
+        <Tab.Screen name="Reels" component={ReelsScreen} options={({ navigation }) => { return { headerShown: false } }} />
         <Tab.Screen name="Profile" component={ProfileScreen}  options={({ navigation }) => { return { headerShown: false } }}/>
       </Tab.Navigator>
       
