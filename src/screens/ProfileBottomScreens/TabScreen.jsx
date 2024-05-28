@@ -29,6 +29,7 @@ return (
     data={data}
     numColumns={3}
     horizontal={false}
+    scrollEnabled={false}
     renderItem={({item})=>{
       // console.log(item.image);
       if(item.key>=4)

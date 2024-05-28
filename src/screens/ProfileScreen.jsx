@@ -7,7 +7,7 @@ import ProfilePosts from '../components/ProfilePosts';
 const ProfileScreen = () => {
   return (
     <View style={{flex:1,backgroundColor:'black'}}>
-    <ScrollView>
+    <ScrollView nestedScrollEnabled={true} >
       <View
         style={{
           flex: 1,

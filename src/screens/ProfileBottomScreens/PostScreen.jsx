@@ -40,7 +40,7 @@ const PostScreen = () => {
       numColumns={3}
       horizontal={false}
     //   windowSize={}
-    
+      scrollEnabled={false}
       renderItem={({item})=>{
         // console.log(item.image);
         if(item.key>=4)
